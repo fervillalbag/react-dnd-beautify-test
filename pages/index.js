@@ -104,7 +104,7 @@ export default function Home() {
         </Flex>
 
         <Box overflowX="scroll" className="hide-scrollbar">
-          <Flex w="2000px" justify="space-between" px="4rem">
+          <Flex w="max-content" justify="space-between" px="4rem">
             {state.columnOrder.map((columnId) => {
               const column = state.columns[columnId];
               const tasks = column.taskIds.map(
@@ -151,7 +151,23 @@ const initialData = {
       title: "COMPLETED",
       taskIds: [],
     },
+    "column-4": {
+      id: "column-4",
+      title: "RE TESTED",
+      taskIds: [],
+    },
+    "column-5": {
+      id: "column-5",
+      title: "CLOSED",
+      taskIds: [],
+    },
   },
   // Facilitate reordering of the columns
-  columnOrder: ["column-1", "column-2", "column-3"],
+  columnOrder: [
+    "column-1",
+    "column-2",
+    "column-3",
+    "column-4",
+    "column-5",
+  ],
 };

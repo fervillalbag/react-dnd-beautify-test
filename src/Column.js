@@ -8,9 +8,10 @@ const Column = ({ column, tasks }) => {
     <Flex
       rounded="3px"
       bg="column-bg"
-      w="1000px"
+      w="600px"
       h="620px"
       flexDir="column"
+      border="1px solid red"
     >
       <Flex
         align="center"
